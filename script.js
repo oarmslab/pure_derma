@@ -26,7 +26,7 @@ function updateCart() {
     let itemCount = 0;
     cart.forEach((item, index) => {
         const li = document.createElement('li');
-        li.innerHTML = `${item.name} - $${item.price.toFixed(2)} x ${item.quantity} 
+        li.innerHTML = `${item.name} - ${item.price.toFixed(2)} FCFA x ${item.quantity} 
             <button onclick="removeFromCart(${index})">Remove</button>`;
         cartItemsContainer.appendChild(li);
         total += item.price * item.quantity;
