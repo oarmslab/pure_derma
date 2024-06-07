@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Derma</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/PURE_DERMA.jpg" alt="Pure Derma Logo">
+        </div>
+        <h1>Pure Derma</h1>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+    <main>
+        <section class="products">
+            <h2>Products</h2>
+            <div class="product" data-price="8000">
+                <img src="images/Feminelle.jpg" alt="Product 1 Image">
+                <h3 class="product-name" data-description="I highly recommend the feminelle intimate cleansing cream cause it’s safe, gynecologically tested, it’s soap free & perfume free , and has no side effects .">Feminelle Intimate Wash</h3>
+                <p>8000FCFA</p>
+                <label for="quantity1">Quantity:</label>
+                <input type="number" id="quantity1" name="quantity" min="1" value="1">
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product" data-price="17000">
+                <img src="images/Medix.jpg" alt="Product 2 Image">
+                <h3 class="product-name" data-description="This is a description for MEDIX 5.5 body lotion.">MEDIX 5.5 body lotion</h3>
+                <p>17000FCFA</p>
+                <label for="quantity2">Quantity:</label>
+                <input type="number" id="quantity2" name="quantity" min="1" value="1">
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product" data-price="10000">
+                <img src="images/Milk_honey.jpg" alt="Product 3 Image">
+                <h3 class="product-name" data-description="This scrub is known for its gentle exfoliation, combining the nourishing properties of milk and honey to leave your skin feeling soft and smooth. It helps remove dead skin cells and promote a radiant complexion.
+                ">Milk and Honey Smoothing Sugar Scrub</h3>
+                <p>10000CFA</p>
+                <label for="quantity3">Quantity:</label>
+                <input type="number" id="quantity3" name="quantity" min="1" value="1">
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </section>
+        <section class="cart">
+            <h2>Cart <i class="fas fa-shopping-cart"></i></h2>
+            <ul id="cartItems"></ul>
+            <p>Total: $<span id="total">0.00</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 oarmslab. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+

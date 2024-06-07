@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    left: 1em;
+}
+
+.logo img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.cart-icon {
+    position: absolute;
+    right: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon i {
+    font-size: 1.5em;
+}
+
+#cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+    margin-left: 0.5em;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    flex: 1;
+}
+
+.products, .cart {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product {
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.product img {
+    width: 25%; /* Adjust as needed */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.product-name {
+    position: relative;
+    cursor: pointer;
+}
+
+.product-name::after {
+    content: attr(data-description);
+    visibility: hidden;
+    opacity: 0;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.5em;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Adjust as needed */
+    left: 50%;
+    margin-left: -100px; /* Adjust as needed */
+    transition: opacity 0.3s;
+}
+
+.product-name::after::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Adjust as needed */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.product-name:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+
+
+
+
+
+
